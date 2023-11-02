@@ -1,0 +1,11 @@
+<h1>App component Html</h1>
+
+
+<!-- <input  type="text" [(ngModel)]="routeModel" />
+<input [(ngModel)]="dataModel" type="text" />
+<button class="btn btn-primary" (click)="addRoute()">submit</button> -->
+
+<div *ngFor="let route of routes" (click)="navigateDynamicRoute(route)">{{route.path}}</div>
+<router-outlet></router-outlet>
+
+<div appModifier [name]="'anjum'" class="h1">hello world</div>
